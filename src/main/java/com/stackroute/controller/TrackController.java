@@ -16,6 +16,7 @@ import java.util.List;
 @RequestMapping(value = "api/v1")
 public class TrackController
 {
+    // Declaration
     TrackService trackService;
     @Autowired
     public TrackController(TrackService userService)
@@ -23,6 +24,7 @@ public class TrackController
         this.trackService=userService;
 
     }
+    //Implementing post method
     @PostMapping("track")
     public ResponseEntity<?> saveUser(@RequestBody Track user)
     {
